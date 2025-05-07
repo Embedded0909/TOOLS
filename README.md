@@ -488,3 +488,51 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 }
 
 ```
+update 
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Ảnh BMP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input[type="file"] {
+            margin: 10px 0;
+        }
+
+        img {
+            margin-top: 20px;
+            max-width: 300px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h3>Upload ảnh BMP</h3>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="image" accept=".bmp">
+        <br>
+        <input type="submit" value="Tải lên">
+    </form>
+
+    <!-- Ảnh sẽ hiển thị nếu đường dẫn hợp lệ -->
+   
+</body>
+</html>
+
+```
